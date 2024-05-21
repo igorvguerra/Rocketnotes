@@ -21,6 +21,11 @@ export function Profile() {
     const [avatarFile, setAvatarFile] = useState(null);
 
     async function handleUpdate(){
+        if (passwordOld && !passwordNew) {
+            alert("Insira uma nova senha!");
+            return;
+          }
+        
         const updated = {
             name,
             email,

@@ -61,6 +61,14 @@ export function New() {
         if(newTag){
             return alert("Atenção! Falta confirmar uma Tag.")
         }
+
+        if (!newLink && links.length === 0) {
+            return alert("Digite um link para nota.")
+          }
+          
+        if (!newTag && tags.length === 0) {
+            return alert("Digite uma tag para nota.")
+          }
         await api.post("/notes", {
             title,
             description,
