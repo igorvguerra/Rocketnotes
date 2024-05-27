@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { Container, Form } from './styles';
 import { useState } from 'react';
-import { api } from '../../../../../api/src/services/api';
+import { api } from '../../services/api';
 
 import { Header } from '../../components/Header';
 import { Input } from '../../components/Input';

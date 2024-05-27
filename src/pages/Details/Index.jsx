@@ -1,7 +1,7 @@
 import { Container, Links, Content } from './styles';
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { api } from '../../../../../api/src/services/api';
+import { api } from '../../services/api';
 
 import { Button } from '../../components/Button';
 import { ButtonText } from '../../components/ButtonText';

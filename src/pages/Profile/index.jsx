@@ -4,7 +4,7 @@ import { useAuth } from '../../hooks/auth';
 import { Container, Form, Avatar } from './styles';
 import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from 'react-icons/fi';
 import avatarPlaceHolder from '../../assets/avatar_placeholder.svg';
-import { api } from '../../../../../api/src/services/api';
+import { api } from '../../services/api';
 import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
 
