@@ -1,5 +1,5 @@
 import { RiShutDownLine } from 'react-icons/ri';
-import { api } from '../../../../../api/src/services/api';
+import { api } from '../../services/api';
 import avatarPlaceHolder from '../../assets/avatar_placeholder.svg';
 import { useNavigate } from 'react-router-dom';
 
