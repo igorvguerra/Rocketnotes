@@ -20,22 +20,11 @@ export function Header() {
     }
 
     const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceHolder;
-
-    const resizedAvatar = (avatarUrl) => {
-        Resizer.imageFileResizer(
-            avatarUrl,
-            400,
-            400,
-            'JPEG',
-            100,
-            0,
-        )
-    };
     
     return (
         <Container>
             <Profile to="/profile">
-                <img src={resizedAvatar} alt={user.name} />
+                <img src={avatarUrl} alt={user.name} />
 
                 <div>
                     <span>Bem-vindo</span>
