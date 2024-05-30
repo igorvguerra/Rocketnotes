@@ -45,7 +45,7 @@ export function Details() {
         <main>
           <Content>
             <ButtonText 
-              title="Excluir nota" 
+              title="Delete Note" 
               onClick={handleDeleteNote}
             />
               <h1>
@@ -57,7 +57,7 @@ export function Details() {
               </p>
             {
               data.links &&
-              <Section title= "Links Úteis">
+              <Section title= "Links">
                 <Links>
                   {
                     data.links.map(link => (
@@ -76,7 +76,7 @@ export function Details() {
 
             {
               data.tags &&
-              <Section title="Marcadores">
+              <Section title="Tags">
               {
                 data.tags.map(tag => (
                   <Tag 
@@ -89,7 +89,7 @@ export function Details() {
             }
         
             <Button 
-              title= "Voltar" 
+              title= "Return" 
               onClick={handleReturn}
             />
           </Content>

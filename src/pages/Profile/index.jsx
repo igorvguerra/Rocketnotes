@@ -66,7 +66,7 @@ export function Profile() {
             <Form>
 
                 <Avatar>
-                    <img src={avatar} alt="Foto do usuário" />
+                    <img src={avatar} alt="user picture" />
                     <label htmlFor="avatar">
                         <FiCamera />
                         <input type="file" id='avatar' onChange={handleChangeAvatar} />
@@ -74,7 +74,7 @@ export function Profile() {
                     </label>
                 </Avatar>
                 <Input 
-                    placeholder="Nome"
+                    placeholder="Name"
                     type="text"
                     icon={FiUser}
                     value={name}
@@ -90,20 +90,20 @@ export function Profile() {
                 />
 
                 <Input 
-                    placeholder="Senha Atual"
+                    placeholder="Current Password"
                     type="password"
                     icon={FiLock}
                     onChange={e=> setPasswordOld(e.target.value)}
                 />
                 
                 <Input 
-                    placeholder="Nova senha"
+                    placeholder="New Password"
                     type="password"
                     icon={FiLock}
                     onChange={e=> setPasswordNew(e.target.value)}
                 />
 
-                <Button title="Salvar" onClick={handleUpdate} />
+                <Button title="Save" onClick={handleUpdate} />
             </Form>
         </Container>
     );

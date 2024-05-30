@@ -59,13 +59,13 @@ export function Home() {
     return (
         <Container>
             <Brand>
-                <h1>Rocketnotes</h1>
+                <h1>Got Notes</h1>
             </Brand>
 
             <Header/>
 
             <Menu>
-                <li><ButtonText title="Todos" 
+                <li><ButtonText title="All" 
                     onClick={() => handleTagSelected("all")}
                     $isActive={tagsSelected.length === 0}
                 /></li>
@@ -85,14 +85,14 @@ export function Home() {
 
             <Search>
                 <Input 
-                placeholder ="Pesquisar pelo título" 
+                placeholder ="Search by title" 
                 icon={FiSearch} 
                 onChange={(e) => setSearch(e.target.value)}
                 />
             </Search>
 
             <Content>
-                <Section title="Minhas notas">
+                <Section title="My Notes">
                     {
                     notes.map(note => (
                         <Note 
@@ -107,7 +107,7 @@ export function Home() {
 
             <NewNote to="/new">
                 <FiPlus />
-                    Criar nota
+                    Create New Note
             </NewNote>
         </Container>
     );

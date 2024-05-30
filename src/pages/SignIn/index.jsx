@@ -23,10 +23,10 @@ export function SignIn() {
     return(
         <Container>
             <Form>
-                <h1>Rocket Notes</h1>
-                <p>Aplicação para salvar e gerenciar os seus links úteis.</p>
+                <h1>Got Notes</h1>
+                <p>Save your important notes here!</p>
 
-                <h2>Faça o seu login</h2>
+                <h2>Login</h2>
 
                 <Input 
                     placeholder="E-mail"
@@ -36,13 +36,13 @@ export function SignIn() {
                 />
 
                 <Input 
-                    placeholder="Senha"
+                    placeholder="Password"
                     type="password"
                     icon={FiLock}
                     onChange={e => setPassword(e.target.value)}
                 />
 
-                <Button title="Entrar" onClick={handleSignIn} />
+                <Button title="Enter" onClick={handleSignIn} />
 
                 <Link to="/register">
                     Criar conta
