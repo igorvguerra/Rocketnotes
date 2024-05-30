@@ -45,7 +45,7 @@ export function SignIn() {
                 <Button title="Enter" onClick={handleSignIn} />
 
                 <Link to="/register">
-                    Criar conta
+                    Create an account
                 </Link>
             </Form>
             <Background/>
