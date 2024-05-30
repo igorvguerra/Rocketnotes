@@ -51,23 +51,23 @@ export function New() {
 
     async function handleNewNote(){
         if(!title){
-            return alert("Atenção! Insira o título da nota.")
+            return alert("Attention! Insert the note title.")
         }
         
         if(newLink){
-            return alert("Atenção! Falta confirmar um Link.")
+            return alert("Attention! You have one unconfirmed Link.")
         }
         
         if(newTag){
-            return alert("Atenção! Falta confirmar uma Tag.")
+            return alert("Attention! You have one unconfirmed Tag.")
         }
 
         if (!newLink && links.length === 0) {
-            return alert("Digite um link para nota.")
+            return alert("Insert at least one link.")
           }
           
         if (!newTag && tags.length === 0) {
-            return alert("Digite uma tag para nota.")
+            return alert("Insert at least one tag.")
           }
         await api.post("/notes", {
             title,
@@ -77,7 +77,7 @@ export function New() {
         
         });
 
-        alert("Nota criada com sucesso!");
+        alert("New note successfully created!");
         handleReturn();
     }
     return(
