@@ -22,7 +22,7 @@ export function Profile() {
 
     async function handleUpdate(){
         if (passwordOld && !passwordNew) {
-            alert("Insira uma nova senha!");
+            alert("Insert a new password!");
             return;
           }
         
