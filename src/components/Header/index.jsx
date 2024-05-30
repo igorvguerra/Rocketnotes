@@ -2,7 +2,7 @@ import { RiShutDownLine } from 'react-icons/ri';
 import { api } from '../../services/api';
 import avatarPlaceHolder from '../../assets/avatar_placeholder.svg';
 import { useNavigate } from 'react-router-dom';
-import Resizer from 'react-image-file-resizer';
+
 
 
 import { useAuth } from '../../hooks/auth';
