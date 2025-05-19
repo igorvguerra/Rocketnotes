@@ -1,6 +1,6 @@
 # Rocketnotes
 
-[https://irocketnotes.netlify.app/](https://gotnotes.netlify.app/)
+[https://gotnotes.netlify.app/](https://gotnotes.netlify.app/)
 
 Rocketnotes it's an application to **create and manage your study notes.**
 
