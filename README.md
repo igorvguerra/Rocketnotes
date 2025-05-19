@@ -1,8 +1,8 @@
-# Rocketnotes
+# Gotnotes
 
 [https://gotnotes.netlify.app/](https://gotnotes.netlify.app/)
 
-Rocketnotes it's an application to **create and manage your study notes.**
+Gotnotes it's an application to **create and manage your study notes.**
 
 This tool allows any user to create and storage notes about any subject of their interest.
 
